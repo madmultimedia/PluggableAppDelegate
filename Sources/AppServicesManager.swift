@@ -12,14 +12,17 @@ import UserNotifications
 
 /// This is only a tagging protocol.
 /// It doesn't add more functionalities yet.
+@available(iOS 10.0, *)
 public protocol ApplicationService: UIApplicationDelegate, UNUserNotificationCenterDelegate {}
 
+@available(iOS 10.0, *)
 extension ApplicationService {
     public var window: UIWindow? {
         return UIApplication.shared.delegate?.window ?? nil
     }
 }
 
+@available(iOS 10.0, *)
 open class PluggableApplicationDelegate: UIResponder, UIApplicationDelegate {
 
     public var window: UIWindow?

@@ -9,6 +9,7 @@
 import UIKit
 import CloudKit
 
+@available(iOS 10.0, *)
 extension PluggableApplicationDelegate {
 
     // This will be called on the main thread after the user indicates they want to accept a CloudKit sharing invitation in your application.

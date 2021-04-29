@@ -9,6 +9,7 @@
 import UIKit
 import Intents
 
+@available(iOS 10.0, *)
 extension PluggableApplicationDelegate {
 
     @available(iOS 11.0, *)

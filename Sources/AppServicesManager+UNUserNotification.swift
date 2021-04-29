@@ -9,6 +9,7 @@
 import UserNotifications
 
 // MARK: - UNUserNotificationCenterDelegate
+@available(iOS 10.0, *)
 extension PluggableApplicationDelegate: UNUserNotificationCenterDelegate {
 
     @available(iOS 10.0, *)
