@@ -8,9 +8,10 @@
 
 import UIKit
 
+@available(iOS 10.0, *)
 extension PluggableApplicationDelegate {
 
-    @available(iOS 8.2, *)
+  @available(iOS 10.0, *)
     open func application(_ application: UIApplication, handleWatchKitExtensionRequest userInfo: [AnyHashable: Any]?, reply: @escaping ([AnyHashable: Any]?) -> Void) {
         for service in _services {
             service.application?(application, handleWatchKitExtensionRequest: userInfo, reply: reply)

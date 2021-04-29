@@ -8,9 +8,10 @@
 
 import UIKit
 
+@available(iOS 10.0, *)
 extension PluggableApplicationDelegate {
 
-    @available(iOS 9.0, *)
+    @available(iOS 10.0, *)
     open func applicationShouldRequestHealthAuthorization(_ application: UIApplication) {
         for service in _services {
             service.applicationShouldRequestHealthAuthorization?(application)

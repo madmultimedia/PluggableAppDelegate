@@ -8,9 +8,10 @@
 
 import UIKit
 
+@available(iOS 10.0, *)
 extension PluggableApplicationDelegate {
 
-    @available(iOS 6.0, *)
+    @available(iOS 10.0, *)
     open func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         var result = false
         for service in _services {
@@ -21,7 +22,7 @@ extension PluggableApplicationDelegate {
         return result
     }
 
-    @available(iOS 3.0, *)
+    @available(iOS 10.0, *)
     open func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         var result = false
         for service in _services {
@@ -32,7 +33,7 @@ extension PluggableApplicationDelegate {
         return result
     }
 
-    @available(iOS 2.0, *)
+    @available(iOS 10.0, *)
     open func applicationDidFinishLaunching(_ application: UIApplication) {
         _services.forEach { $0.applicationDidFinishLaunching?(application) }
     }

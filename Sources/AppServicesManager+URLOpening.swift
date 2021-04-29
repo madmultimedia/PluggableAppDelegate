@@ -8,9 +8,10 @@
 
 import UIKit
 
+@available(iOS 10.0, *)
 extension PluggableApplicationDelegate {
 
-    @available(iOS 9.0, *)
+    @available(iOS 10.0, *)
     open func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
         var result = false
         for service in _services {
